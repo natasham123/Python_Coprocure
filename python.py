@@ -12,14 +12,14 @@ soup = BeautifulSoup(page, 'html.parser')
 name_box = soup.find(‘h1’, attrs={‘class’: ‘h2’})
 h2 = name_box.text.strip()
 print (h2)
-jsonData = json.loads(element.attrs[{‘class’: ‘h2’}])
-print (jsonData)
+jsonData1 = json.loads(element.attrs[{‘class’: ‘h2’}])
+print (jsonData1)
 
 contract = soup.find(‘div’, attrs={‘class’:’vendor-contract-body’})
 vendor-contract-body = contract.text
 print (vendor-contract-body)
-jsonData = json.loads(element.attrs[{‘class’:’vendor-contract-body’}])
-print (jsonData)
+jsonData2 = json.loads(element.attrs[{‘class’:’vendor-contract-body’}])
+print (jsonData2)
 
 
 """from pprint import pprint
